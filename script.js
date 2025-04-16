@@ -120,6 +120,38 @@ document.addEventListener("mousemove", e => {
 
 
 // 7. Typing Text Effect
+
+
+// 7. Typing Text Effect
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  console.log("Hamburger script loaded");
+
+  if (!hamburger || !navLinks) {
+    console.error("Hamburger or navLinks not found");
+    return;
+  }
+
+  hamburger.addEventListener('click', () => {
+    console.log("Hamburger clicked");
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('active');
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      console.log("Nav link clicked");
+      navLinks.classList.remove('show');
+      hamburger.classList.remove('active');
+    });
+  });
+
+  // ✅ Start the typing effect here
+  if (words.length) setTimeout(type, 1000);
+});
+
 const typedText = document.querySelector('.typed-text');
 const cursor = document.querySelector('.cursor');
 
@@ -128,7 +160,6 @@ const words = [
   "Custom AI Systems That Scale With You",
   "No Templates. Just Results."
 ];
-
 
 let wordIndex = 0;
 let charIndex = 0;
@@ -156,7 +187,3 @@ function erase() {
     setTimeout(type, 500);
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (words.length) setTimeout(type, 1000);
-});

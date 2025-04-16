@@ -9,7 +9,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <button id="backToTop" title="Go to top">↑</button>
@@ -35,13 +37,21 @@
 
         <nav class="navbar">
           <img src="assets/images/Miromate_logo.png" alt="Miromate Logo" class="logo" />
-          <ul class="nav-links">
+          <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="navLinks" class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#about">About</a></li>
           </ul>
         </nav>
+
+
+
 
         <div class="hero fade-in">
           <h1><span class="typed-text"></span><span class="cursor">|</span></h1>
@@ -140,13 +150,22 @@
         </div>
       </section>
 
-      <section id="about" class="about fade-in">
-        <h2>Why Miromate?</h2>
-        <p>
-          We don’t sell templates — we build AI systems that actually solve your business
-          problems. Built with code + real AI, not duct tape.
-        </p>
+      <section id="about" class="about-section fade-in">
+        <div class="about-card">
+          <div class="about-icon-wrapper">
+            <img src="assets/spark.svg" alt="Spark Icon" class="about-icon" />
+          </div>
+          <h2 class="about-heading">Why Miromate?</h2>
+          <div class="heading-underline"></div>
+          <p class="about-text">
+            We don’t sell templates — we build AI systems that actually solve your business problems.
+            Built with <strong>real code</strong> + <strong>real AI</strong> — not duct tape.
+          </p>
+        </div>
       </section>
+
+
+
 
       <section class="cta-footer fade-in">
         <h2>Ready to get started?</h2>
@@ -159,17 +178,29 @@
       <div class="footer-left">
         <p>Miromate – Custom AI Automation Services</p>
       </div>
+
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#">Blog</a>
         <a href="#">Help</a>
       </div>
-      <img src="assets/images/Miromate_logo.png" alt="Miromate Logo" class="logo parallax" data-speed="0.02" />
+
+      <div class="footer-icons">
+        <a href="https://github.com/miroamir" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:founder@miromate.ai" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <img src="assets/images/Miromate_logo.png" alt="Miromate Logo" class="footer-logo" />
 
       <p class="footer-copy">© 2025 Miromate. All rights reserved.</p>
 
     </footer>
+
     <script src="script.js"></script>
     <!-- Modal Structure -->
     <div class="modal" id="ctaModal">

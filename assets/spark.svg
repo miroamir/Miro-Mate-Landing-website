@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="url(#grad)" stroke-width="1.8">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v4m6.364 1.636l-2.828 2.828M22 12h-4m-1.636 6.364l-2.828-2.828M12 22v-4m-6.364-1.636l2.828-2.828M2 12h4m1.636-6.364l2.828 2.828" />
+</svg>
