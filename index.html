@@ -59,7 +59,7 @@
             growth — let AI handle the rest.
           </p>
           <div class="hero-cta fade-in">
-            <a href="https://calendly.com/miromate" class="btn-primary">Book a Free Call</a>
+            <a href="https://calendly.com/amir-miromate" class="btn-primary">Book a Free Call</a>
             <a href="mailto:founder@miromate.ai" class="btn-secondary">Contact Sales</a>
           </div>
         </div>
@@ -165,7 +165,7 @@
       <section class="cta-footer fade-in">
         <h2>Ready to get started?</h2>
         <p>Let’s build your first AI-powered system together.</p>
-        <a href="https://calendly.com/miromate" class="btn-primary">Book Your Free Audit</a>
+        <a href="https://calendly.com/amir-miromate" class="btn-primary">Book Your Free Audit</a>
       </section>
     </main>
 
@@ -190,23 +190,27 @@
         </div>
       </div>
 
-
       <img src="assets/images/Miromate_logo.png" alt="Miromate Logo" class="footer-logo" />
 
       <p class="footer-copy">© 2025 Miromate. All rights reserved.</p>
 
     </footer>
 
-    <script src="script.js"></script>
-    <!-- Modal Structure -->
-    <div class="modal" id="ctaModal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>Book Your Free AI Audit</h2>
-        <p>We’ll analyze your workflows and show you where automation can save you time + money.</p>
-        <a href="https://calendly.com/miromate" class="btn-primary">Book Now</a>
-      </div>
-    </div>
+  <!-- Load Calendly widget script once near the bottom of <body> -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<script src="script.js"></script>
+
+<!-- Modal Structure -->
+<div class="modal" id="ctaModal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Book Your Free AI Audit</h2>
+    <p>We’ll analyze your workflows and show you where automation can save you time + money.</p>
+    <a href="#" class="btn-primary" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/amir-miromate' }); return false;">
+      Book Now
+    </a>
+  </div>
+</div>
 
   </body>
 </html>
