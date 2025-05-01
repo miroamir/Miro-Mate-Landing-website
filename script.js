@@ -148,6 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      hamburger.classList.remove('active');
+    });
+  });
+
   // ✅ Start the typing effect here
   if (words.length) setTimeout(type, 1000);
 });
@@ -187,3 +194,10 @@ function erase() {
     setTimeout(type, 500);
   }
 }
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    hamburger.classList.remove('active');
+  });
+});
